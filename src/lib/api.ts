@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000/api/v1";
+const API_BASE = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000/api/v1";
 const PIPELINE_BASE = `${API_BASE}/catalog/pipeline`;
 
 function getToken(): string | null {
