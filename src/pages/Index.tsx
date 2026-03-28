@@ -98,6 +98,7 @@ export default function Index() {
                   </Button>
                 </div>
               )}
+              <ThemeToggle />
               <Button variant="outline" size="sm" onClick={clearJob}>
                 <RotateCw className="w-3.5 h-3.5 mr-1" />New job
               </Button>
