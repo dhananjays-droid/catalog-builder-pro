@@ -5,6 +5,7 @@ import StepPanel from "@/components/pipeline/StepPanel";
 import CatalogGallery from "@/components/pipeline/CatalogGallery";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import ThemeToggle from "@/components/ThemeToggle";
 import { Copy, Plus, RotateCw, AlertTriangle, LayoutGrid, Table2 } from "lucide-react";
 import { toast } from "sonner";
 import type { DownloadStep } from "@/lib/api";
@@ -27,7 +28,10 @@ export default function Index() {
 
   if (!jobId) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-6">
+      <div className="min-h-screen flex items-center justify-center p-6 relative">
+        <div className="absolute top-4 right-4">
+          <ThemeToggle />
+        </div>
         <div className="max-w-md w-full space-y-6 text-center">
           <div>
             <h1 className="text-2xl font-bold tracking-tight">Catalog Pipeline</h1>
@@ -94,6 +98,7 @@ export default function Index() {
                   </Button>
                 </div>
               )}
+              <ThemeToggle />
               <Button variant="outline" size="sm" onClick={clearJob}>
                 <RotateCw className="w-3.5 h-3.5 mr-1" />New job
               </Button>
