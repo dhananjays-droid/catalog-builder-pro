@@ -5,6 +5,7 @@ import StepPanel from "@/components/pipeline/StepPanel";
 import CatalogGallery from "@/components/pipeline/CatalogGallery";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import ThemeToggle from "@/components/ThemeToggle";
 import { Copy, Plus, RotateCw, AlertTriangle, LayoutGrid, Table2 } from "lucide-react";
 import { toast } from "sonner";
 import type { DownloadStep } from "@/lib/api";
