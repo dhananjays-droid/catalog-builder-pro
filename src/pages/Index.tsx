@@ -28,7 +28,10 @@ export default function Index() {
 
   if (!jobId) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-6">
+      <div className="min-h-screen flex items-center justify-center p-6 relative">
+        <div className="absolute top-4 right-4">
+          <ThemeToggle />
+        </div>
         <div className="max-w-md w-full space-y-6 text-center">
           <div>
             <h1 className="text-2xl font-bold tracking-tight">Catalog Pipeline</h1>
